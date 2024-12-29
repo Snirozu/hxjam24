@@ -470,7 +470,7 @@ class PlayState extends FlxState {
 		}
 
 		if (quotaComplete) {
-			var percent = Util.percentOf(Math.ceil((score - quota) / 100), (level + 1) * 15);
+			var percent = Util.percentOf(Math.ceil((v - quota) / 100), (level + 1) * 15);
 			scoreText.text = 'PROFIT: ' + percent + "%";
 
 			if (!hasMaxProfit && percent >= 100) {
